@@ -18,7 +18,5 @@ public class First {
         }
 
         System.out.println("Hash: " + sb.toString().toUpperCase());
-        
-
     }
 }
