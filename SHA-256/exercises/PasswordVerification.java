@@ -1,8 +1,9 @@
+
 import java.security.*;
 import java.util.*;
 
 public class PasswordVerification {
-    private static class StoredPassword {
+    static class StoredPassword {
         private byte[] password;
         private byte[] salt;
 
@@ -78,7 +79,7 @@ public class PasswordVerification {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.io.IOException {
         // new StoredPassword("mysecret");
         StoredPassword correctPassword = storePassword("mysecret");
 
